@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 11
+Implementation-Title: hello-world
+Implementation-Version: 0.1.0
+Main-Class: com.dockerforjavadevelopers.hello.Application
+Created-By: Maven Integration for Eclipse
+

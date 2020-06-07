@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: "devcluster"
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: "devcluster"
+    spec:
+      containers:
+        - name: "devcluster"
+          image: "postidev.azurecr.io/devcluster"
+          ports:
+          - containerPort: 8080

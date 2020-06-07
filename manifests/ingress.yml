@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: "devcluster"
+    labels:
+        app: "devcluster"
+    annotations:
+        kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+    rules:
+        - host: devcluster81a6-devcluster.b921a30010394d788016.northeurope.aksapp.io
+          http:
+            paths:
+            - path: /
+              backend:
+                serviceName: "devcluster"
+                servicePort: 8080
