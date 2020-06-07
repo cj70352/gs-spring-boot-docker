@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: '16743a74-1eb5-49ba-ab79-d88d577d3382'
   imageRepository: 'cjgsspringbootdocker'
   containerRegistry: 'postipsorderregistry.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: './Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'postipsorderregistry1887a0a3-auth'
 
